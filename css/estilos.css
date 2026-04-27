@@ -41,12 +41,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero */
 .hero {
-    background-color: #026e9b;
-    /* Para cuando tengas la imagen de fondo:
-       background-image: url('ruta/a/tu-imagen.jpg');
-       background-size: cover;
-       background-position: center;
-    */
+    background-color: #026e9b; /* fallback por si la imagen no carga */
+    background-image: url('https://cdn.jsdelivr.net/gh/toaxel2011/landing-assets@main/img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 120px 0 80px;
     text-align: center;
 }
