@@ -1,0 +1,87 @@
+/* ========== PALETA DE COLORES ==========
+   60% #026e9b (principal)
+   25% #ffffff (blanco)
+   10% #545454 (gris texto)
+    5% #000000 (negro detalles)
+========================================== */
+
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #545454;
+    padding-top: 70px; /* Para compensar la navbar fija */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #026e9b;
+}
+
+.text-primary {
+    color: #026e9b !important;
+}
+.btn-primary {
+    background-color: #026e9b;
+    border-color: #026e9b;
+}
+.btn-primary:hover {
+    background-color: #01577a;
+    border-color: #01577a;
+}
+.btn-outline-primary {
+    color: #026e9b;
+    border-color: #026e9b;
+}
+.btn-outline-primary:hover {
+    background-color: #026e9b;
+    color: white;
+}
+.bg-primary {
+    background-color: #026e9b !important;
+}
+
+/* Hero */
+.hero {
+    background-color: #026e9b;
+    /* Para cuando tengas la imagen de fondo:
+       background-image: url('ruta/a/tu-imagen.jpg');
+       background-size: cover;
+       background-position: center;
+    */
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+/* Iconos placeholder */
+.icon-placeholder img {
+    filter: invert(29%) sepia(93%) saturate(1352%) hue-rotate(173deg) brightness(92%) contrast(95%);
+    /* Esto intenta colorear iconos blancos con el tono #026e9b, si usas SVG. Si no, ajusta. */
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Sombras y bordes */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Acordeón FAQ */
+.accordion-button:not(.collapsed) {
+    background-color: #e9f4fa;
+    color: #026e9b;
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(2, 110, 155, 0.25);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
